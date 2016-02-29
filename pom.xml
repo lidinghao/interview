@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>interview</groupId>
+    <artifactId>interview_parent</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <description>interview_parent</description>
+    <name>interview_parent</name>
+    <packaging>pom</packaging>
+    <licenses>
+        <license>
+            <name>Apache 2.0 License</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+    <modules>
+        <module>algorithms</module>
+        <module>tricks</module>
+        <module>compilers</module>
+        <module>java-io</module>
+        <module>java-nio</module>
+        <module>java-net</module>
+    </modules>
+
+</project>

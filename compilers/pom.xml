@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>compilers</artifactId>
+    <parent>
+        <artifactId>interview_parent</artifactId>
+        <groupId>interview</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.antlr</groupId>
+                <artifactId>antlr4-maven-plugin</artifactId>
+                <version>4.5.1-1</version>
+                <configuration>
+                    <sourceDirectory>${basedir}/src/main/java/</sourceDirectory>
+                    <grammars>Calculator.g4</grammars>
+                    <visitor>true</visitor>
+                    <listener>true</listener>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>antlr4</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.antlr</groupId>
+                <artifactId>antlr3-maven-plugin</artifactId>
+                <version>3.5.2</version>
+                <configuration>
+                    <sourceDirectory>${basedir}/src/main/java/</sourceDirectory>
+                    <grammars>ExprEval.g ExprEval2.g</grammars>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>antlr3</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <!--<plugin>-->
+                <!--<groupId>org.antlr</groupId>-->
+                <!--<artifactId>antlr4test-maven-plugin</artifactId>-->
+                <!--<configuration>-->
+                    <!--<verbose>false</verbose>-->
+                    <!--<showTree>false</showTree>-->
+                    <!--<entryPoint>equation</entryPoint>-->
+                    <!--<grammarName>calculator</grammarName>-->
+                    <!--<packageName></packageName>-->
+                    <!--<exampleFiles>examples/</exampleFiles>-->
+                <!--</configuration>-->
+                <!--<executions>-->
+                    <!--<execution>-->
+                        <!--<goals>-->
+                            <!--<goal>test</goal>-->
+                        <!--</goals>-->
+                    <!--</execution>-->
+                <!--</executions>-->
+            <!--</plugin>-->
+        </plugins>
+    </build>
+    <dependencies>
+        <dependency>
+            <groupId>org.antlr</groupId>
+            <artifactId>antlr4-runtime</artifactId>
+            <version>4.5</version>
+        </dependency>
+        <dependency>
+            <groupId>org.antlr</groupId>
+            <artifactId>antlr-runtime</artifactId>
+            <version>3.5.2</version>
+        </dependency>
+    </dependencies>
+
+
+
+</project>
