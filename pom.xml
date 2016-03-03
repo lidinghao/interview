@@ -23,6 +23,7 @@
         <module>java-io</module>
         <module>java-nio</module>
         <module>java-net</module>
+        <module>jvm</module>
     </modules>
 
 </project>
