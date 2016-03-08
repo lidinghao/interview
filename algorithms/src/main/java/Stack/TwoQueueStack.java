@@ -22,7 +22,8 @@ public class TwoQueueStack {
             queue2.add(queue1.poll());
         }
         queue1.poll();
-
+        //数学模式与优化课上的蚂蚁相遇问题，由于蚂蚁是一样的，所以相遇可以想象成穿越，这里两个队列
+        // 也相同，可以想象另外队列只是一个临时存储，其实操作一直在一个队列中进行
         Queue<Integer> temp = queue1;
         queue1 = queue2;
         queue2= temp;

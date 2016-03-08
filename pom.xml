@@ -24,6 +24,7 @@
         <module>java-nio</module>
         <module>java-net</module>
         <module>jvm</module>
+        <module>java-collection</module>
     </modules>
 
 </project>
