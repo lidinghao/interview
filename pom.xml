@@ -25,6 +25,7 @@
         <module>java-net</module>
         <module>jvm</module>
         <module>java-collection</module>
+        <module>java-concurrency</module>
     </modules>
 
 </project>

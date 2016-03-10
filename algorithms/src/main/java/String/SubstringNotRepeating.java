@@ -16,6 +16,7 @@ public class SubstringNotRepeating {
             Set<Character> charSet = new HashSet();
             for (int j = i; j < chars.length; j++) {
                 if (charSet.contains(chars[j]) != true) {
+                    charSet.add(chars[j]);
                     longest = Math.max(longest, j - i + 1);
                 } else {
                     break;
@@ -23,12 +24,5 @@ public class SubstringNotRepeating {
             }
         }
         return longest;
-    }
-    public native int intMethod(int i);
-    public int sum(int a, int b) {
-       // int c = 0;
-        int k =2;
-        int c = intMethod(1);
-        return (a + b);
     }
 }
