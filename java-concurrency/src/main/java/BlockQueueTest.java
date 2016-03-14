@@ -8,7 +8,7 @@ import java.util.concurrent.ArrayBlockingQueue;
 public class BlockQueueTest {
     BlockingQueue queue = new BlockingQueue(2);
     Producer producer = new Producer(queue);
-    Consumer consumer = new Consumer(queue);
+     Consumer consumer = new Consumer(queue);
     @Test
     public void test() {
         new Thread(new Producer(queue)).start() ;
