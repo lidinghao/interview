@@ -1,6 +1,7 @@
 /**
  * Created by mandy on 2016/3/16.
  */
+//http://blog.csdn.net/yangzl2008/article/details/43202969
 public class EscapeAnalysis {
     private static class Foo {
         private int x;

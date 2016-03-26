@@ -23,7 +23,7 @@ atom:   INT
     |   '('! expr ')'!
     ;
 
-ID  :   ('a'..'z'|'A'..'Z')+ ;
+ID  :   ('a'..'z'|'collection.A'..'Z')+ ;
 INT :   '0'..'9'+ ;
 NEWLINE:'\r'? '\n' ;
 WS  :   (' '|'\t')+ {skip();} ;
