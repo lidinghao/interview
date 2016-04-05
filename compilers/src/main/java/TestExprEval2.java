@@ -2,7 +2,6 @@ import org.antlr.runtime.ANTLRInputStream;
 import org.antlr.runtime.CommonTokenStream;
 import org.antlr.runtime.RecognitionException;
 import org.antlr.runtime.tree.CommonTree;
-import sun.org.mozilla.javascript.internal.ast.AstNode;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;

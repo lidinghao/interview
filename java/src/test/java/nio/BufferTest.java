@@ -1,3 +1,5 @@
+package nio;
+
 import com.sun.xml.internal.messaging.saaj.util.ByteInputStream;
 import org.junit.Test;
 
