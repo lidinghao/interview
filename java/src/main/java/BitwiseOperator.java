@@ -1,5 +1,7 @@
 import org.junit.Test;
 
+import java.util.HashSet;
+
 /**
  * Created by mandy on 2016/4/28.
  */
@@ -19,5 +21,6 @@ public class BitwiseOperator {
         while(i < array.length & array[i] != 4){
             i++;
         }
+
     }
 }

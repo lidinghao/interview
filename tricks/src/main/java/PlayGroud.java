@@ -1,17 +1,21 @@
+import org.junit.Test;
+
 import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Vector;
 
 /**
  * Created by mandy on 2016/3/25.
  */
-public abstract class PlayGroud {
-    boolean a;
-    byte b;
-    short s1;
-    int c ;
-    long d;
-    float e;
-    double f;
-    char ch;
+public class PlayGroud {
+
+    @Test
+    public void test () {
+        HashSet<Integer> set = new HashSet();
+        set.add(null);
+        System.out.println(set.contains(null));
+
+    }
 
 
 }
