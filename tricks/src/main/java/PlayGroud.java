@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 /**
  * Created by mandy on 2016/3/25.
  */
@@ -11,7 +13,5 @@ public abstract class PlayGroud {
     double f;
     char ch;
 
-    public void test(){
 
-    }
 }
