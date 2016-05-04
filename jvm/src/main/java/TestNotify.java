@@ -6,7 +6,7 @@ import java.util.Objects;
  * Created by mandy on 2016/3/28.
  */
 public class TestNotify {
-    private final  static int NUM_THREADS = 3;
+    private final  static int NUM_THREADS = 5;
 
     public class RunAndWait implements Runnable {
         private final int id;
@@ -18,7 +18,8 @@ public class TestNotify {
             synchronized (RunAndWait.class) {
                 try {
                     System.out.println("thread: " + id + " enter");
-                    RunAndWait.class.wait();
+                    Thread.sleep(100);
+                   // RunAndWait.class.wait();
                     System.out.println("thread: " + id + " wake");
                 } catch (InterruptedException e) {
                     e.printStackTrace();
@@ -34,11 +35,13 @@ public class TestNotify {
         }
         for (int i = 0; i < NUM_THREADS; i++) {
             threads[i].start();
-            Thread.sleep(100);
+
 
         }
         synchronized (RunAndWait.class) {
 
+            RunAndWait.class.notify();
+            RunAndWait.class.notify();
             RunAndWait.class.notify();
             RunAndWait.class.notify();
             RunAndWait.class.notify();
@@ -47,7 +50,6 @@ public class TestNotify {
         for (int i = 0; i < NUM_THREADS; i++) {
             threads[i].join();
         }
-
 
     }
 }

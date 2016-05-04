@@ -2,7 +2,6 @@ package LinkedList;
 
 import junit.framework.Assert;
 import org.junit.Test;
-import sun.jvm.hotspot.ui.table.SortHeaderMouseAdapter;
 
 /**
  * Created by lihao on 16/4/30.
