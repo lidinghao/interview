@@ -8,7 +8,7 @@ public class StringEqualityTest {
 //             int m = l.length();
 //             int n = r.length();
 //             assert(n==m);
-//             int prime = PrimeNumberGenerator.generate(m);
+//             int prime = PrimeNumberGenerator.backtrack(m);
 //             long fp = l.toCharArray()
 //         }
 //    public long StringToNum(String str){

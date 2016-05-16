@@ -1,5 +1,6 @@
 package BackTracking;
 
+import com.sun.org.apache.bcel.internal.generic.LUSHR;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -49,9 +50,29 @@ public class LetterCombinations {
             combine(digits, index+1, prefix+ch, result, map);
         }
     }
+
+    public List<String> letterCombinationsV2(String digits) {
+        String digitletter[] = {"","","abc","def","ghi","jkl","mno","pqrs","tuv","wxyz"};
+        List<String> result = new ArrayList<>();
+        if (digits.length() == 0) return result;
+        result.add("");
+        for (int i = 0; i < digits.length(); i++) {
+            char[] chars = digitletter[digits.charAt(i) - '0'].toCharArray();
+            List<String> temp = new ArrayList<>();
+            for (String s : result) {
+                for (char ch : chars) {
+                    temp.add(s + ch);
+                }
+            }
+            result = temp;
+        }
+        return result;
+    }
+
+
     @Test
     public void test() {
-        List<String> list = letterCombinations("7");
+        List<String> list = letterCombinationsV2("27");
         list.forEach(System.out::println);
     }
 
