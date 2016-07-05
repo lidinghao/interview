@@ -1,6 +1,4 @@
-package heap;
-
-import java.util.Map;
+package Queue;
 
 /**
  * Created by mandy on 2015/11/27.

@@ -1,4 +1,4 @@
-package random.patternmatching;
+package PatternMatch;
 
 /**
  * Created by mandy on 2015/11/30.

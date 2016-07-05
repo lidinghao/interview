@@ -23,7 +23,7 @@ public class SingleNumber {
             one &= ~three;
             two &= ~three;
         }
-        return one;
+        return one != 0 ? one:two;
     }
 
     public int[] singleNumber3(int[] nums) {
@@ -50,7 +50,7 @@ public class SingleNumber {
         Assert.assertEquals(3, singleNumber(new int[]{1, 2, 3, 2, 1}));
         Assert.assertEquals(2, singleNumber(new int[]{1, 2, 1}));
         Assert.assertEquals(2, singleNumber2(new int[]{1, 2, 1, 1}));
-        Assert.assertEquals(5, singleNumber2(new int[]{1, 2, 5, 1, 2, 2, 1}));
+        Assert.assertEquals(5, singleNumber2(new int[]{1, 2, 5, 5, 1, 2, 2, 1}));
         Assert.assertArrayEquals(new int[]{3,5}, singleNumber3(new int[]{1, 2, 5, 1, 2, 3}));
         Assert.assertArrayEquals(new int[]{3,1}, singleNumber3(new int[]{1, 2, 5, 2,5, 3}));
     }

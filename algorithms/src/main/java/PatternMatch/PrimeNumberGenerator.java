@@ -1,4 +1,4 @@
-package random.patternmatching;
+package PatternMatch;
 
 import java.util.Random;
 

@@ -1,11 +1,9 @@
-package random.patternmatching;
+package PatternMatch;
 
 /**
  * Created by mandy on 2015/11/30.
  */
-import org.junit.After;
 import org.junit.Assert;
-import org.junit.Before;
 import org.junit.Test;
 public class BrutalForceTest  {
     @Test

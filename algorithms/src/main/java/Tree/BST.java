@@ -1,4 +1,4 @@
-package BinarySearchTree;
+package Tree;
 
 import java.util.Comparator;
 
